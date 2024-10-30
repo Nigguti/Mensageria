@@ -1,0 +1,13 @@
+"Mensageria é um conceito que define que sistemas distribuídos possam se comunicar por meio de troca de mensagens (evento), sendo estas mensagens 'gerenciadas' por um módulo de mensagens."
+
+Sistema que funciona pela a troca de mensagens de uma parte a outra de forma assincrona
+
+Filas: estrutura de dados onde as mensagens são armazenadas temporariamente até serem processadas por consumidores. Seguindo a ordem FIFO ("a primeira mensagem que entra é a primeira a sair.") utilizadas em padrões de ponto-a-ponto.
+
+Produtores: produtores são as entidades ou componentes responsáveis por enviar mensagens para uma fila ou um tópico. São função é colocar na fila.
+
+Consumidores: entidades que recebem e processam as mensagens enviadas para a fila, cada mensagem geralmente é consumida por apenas um consumidor
+
+Tópicos: mas seguem o modelo de publicação-assinatura (pub/sub), onde uma mensagem é entregue a múltiplos consumidores, fazendo com todos os consumidores recebem como fosse um FANOUT.
+
+Partições: forma de dividir tópicos em várias seções otimizando assim a escabilidade, sequência ordenada de mensagens e é armazenada e processada separadamente.
